@@ -13,22 +13,31 @@ The chatbot retrieves relevant financial information from the uploaded document 
 Architecture
 User Uploads Financial PDF
 ↓
+
 PDF Text Extraction (PyMuPDF)
 ↓
+
 Text Chunking
 ↓
+
 Embedding Generation (SentenceTransformers)
 ↓
+
 Vector Storage (Pinecone)
 ↓
+
 User Question
 ↓
+
 Query Embedding
 ↓
+
 Vector Similarity Search
 ↓
+
 Relevant Financial Context Retrieved
 ↓
+
 QA Model Extracts Final Answer
 
 This approach improves accuracy by retrieving relevant document content before answering the question.
@@ -116,10 +125,15 @@ Repository Structure
 
 financial-qa-chatbot
 │
+
 ├── financial_qa_chatbot.ipynb
+
 ├── sample_financial_statement.pdf
+
 ├── README.md
+
 ├── requirements.txt
+
 Future Improvements
 Possible improvements include:
 
